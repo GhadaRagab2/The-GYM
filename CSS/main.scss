@@ -1,0 +1,331 @@
+/* Roboto Font */
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+/* Reset */
+/* Main style */
+/* Utility Classes */
+/* Section Navbare */
+/* Section: Header */
+/* Section: About */
+/* Section: Membership */
+/* Section: Programs */
+/* Section: Trainers */
+/* Section: Contact */
+/* Responsive */
+/* programs */
+/* Utility Classes */
+/* Section: Navbar */
+/* About */
+/* Programs */
+/* Expert Trainers */
+/* Contact */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-family: "Roboto", sans-serif;
+	line-height: 1.5;
+}
+body {
+	font-family: "Roboto", sans-serif;
+	line-height: 1.5;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	max-width: 80%;
+	margin: auto;
+}
+.bg-dark {
+	background-color: #252a34;
+	color: #ffffff;
+}
+.bg-light {
+	background-color: #eee;
+	color: #252a34;
+}
+.bg-primary {
+	background-color: #08d9d6;
+	color: #fff;
+}
+.text-primary {
+	color: #ff2e63;
+}
+.text-center {
+	text-align: center;
+}
+.l-heading {
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+.m-heading {
+	font-size: 2rem;
+}
+.padding-y-1 {
+	padding: 3rem 0;
+}
+.padding-1 {
+	padding: 1.5rem;
+}
+.btn {
+	background-color: #08d9d6;
+	color: #ffffff;
+	padding: 0.5rem 1.5rem;
+	border-radius: 5px;
+	transition: .3s;
+	&:hover {
+		background-color: #ff2e63;
+	}
+}
+.btn-dark {
+	background-color: #252a34;
+	color: #ffffff;
+}
+.box-shadow {
+	box-shadow: 0 0 10px #252a34;
+}
+.lead {
+	font-size: 1.6rem;
+}
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	.logo {
+		img {
+			width: 80px;
+		}
+	}
+	ul {
+		list-style: none;
+		display: flex;
+		a {
+			color: #ffffff;
+			padding: 1rem;
+			transition: .3s;
+			&:hover {
+				background-color: #08d9d6;
+				border-radius: 5px;
+			}
+		}
+	}
+}
+#header {
+	background: #252a34 url(../Assets/images/showcase.jpg) no-repeat center/cover;
+	height: 100vh;
+	color: #ffffff;
+	.header-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		padding: 1rem;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+}
+#about {
+	.about-content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-bottom: 3rem;
+		div {
+			flex: 1;
+		}
+		img {
+			flex: 1;
+			width: 50%;
+			margin-left: 1.5rem;
+		}
+	}
+}
+#member {
+	background: url(../Assets/images/cta.jpg) no-repeat center center/cover;
+	color: #fff;
+	.member-content {
+		min-height: 350px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba(0, 0, 0, 0.6);
+		overflow: hidden;
+		p {
+			margin-bottom: 1.5rem;
+		}
+	}
+}
+#programs {
+	color: #252a34;
+	.boxes {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.box {
+			flex: 1;
+			padding: 1rem;
+			img {
+				width: 70px;
+				background-color: #08d9d6;
+				padding: 0.5rem;
+				border-radius: 100%;
+			}
+		}
+	}
+}
+#trainers {
+	padding-bottom: 3rem;
+	.trainers-boxes {
+		display: flex;
+		.trainer-box {
+			flex: 1;
+			background-color: #fff;
+			border-radius: 5px;
+			margin: 1rem;
+			img {
+				display: block;
+				width: 100%;
+				margin-bottom: 10px;
+			}
+			ul {
+				list-style: none;
+				display: flex;
+				li {
+					a {
+						color: #252a34;
+						margin-right: 10px;
+						font-size: 1.5rem;
+						transition: .3s;
+						&:hover {
+							color: #ff2e63;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+#contact {
+	display: flex;
+	.contact-us {
+		flex: 1;
+		input {
+			width: 100%;
+			padding: 0.75rem;
+			border: none;
+			margin-bottom: 1rem;
+			outline: none;
+		}
+		textarea {
+			width: 100%;
+			padding: 0.75rem;
+			border: none;
+			margin-bottom: 1rem;
+			outline: none;
+		}
+		.form-group {
+			display: flex;
+			input[type="text"] {
+				margin-right: 0.75rem;
+			}
+		}
+	}
+	.map {
+		flex: 1;
+	}
+}
+@media screen and (min-width: 1100px) {
+	#programs {
+		.boxes {
+			.box {
+				display: flex;
+				text-align: left;
+				img {
+					align-self: center;
+					margin-right: 0.5rem;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.l-heading {
+		font-size: 3rem;
+	}
+	.lead {
+		font-size: 1rem;
+		line-height: 1.3;
+	}
+	#navbar {
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 1.5rem;
+		.logo {
+			margin-bottom: 1rem;
+		}
+	}
+	#about {
+		.about-content {
+			display: block;
+			text-align: center;
+			img {
+				width: 100%;
+				margin: 1rem 0 0 0;
+			}
+		}
+	}
+	#programs {
+		.boxes {
+			display: block;
+		}
+	}
+	#trainers {
+		.trainers-boxes {
+			display: block;
+		}
+	}
+	#contact {
+		flex-direction: column;
+		height: 1000px;
+	}
+}
+@media screen and (max-width: 500px) {
+	#navbar {
+		position: static;
+		ul {
+			display: block;
+			text-align: center;
+			li {
+				padding: 1rem;
+			}
+		}
+	}
+	#contact {
+		.contact-us {
+			.form-group {
+				display: block;
+			}
+		}
+	}
+}
+@media screen and (min-height: 653px) {
+	.l-heading {
+		font-size: 2rem;
+	}
+	.m-heading {
+		font-size: 1.75rem;
+		line-height: 1.2;
+	}
+	#member {
+		.member-content {
+			min-height: 400px;
+		}
+	}
+}
