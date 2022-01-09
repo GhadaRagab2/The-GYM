@@ -82,6 +82,7 @@ a {
 .btn-dark {
 	background-color: #252a34;
 	color: #ffffff;
+	margin-bottom: 3.5rem !important;
 }
 .box-shadow {
 	box-shadow: 0 0 10px #252a34;
@@ -168,6 +169,7 @@ a {
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-bottom: 3rem;
 		.box {
 			flex: 1;
 			padding: 1rem;
@@ -197,6 +199,7 @@ a {
 			ul {
 				list-style: none;
 				display: flex;
+				margin-top: 1rem;
 				li {
 					a {
 						color: #252a34;
